@@ -21,7 +21,7 @@ import java.net.URLConnection;
 @EnableScheduling
 public class ScannerCodigoDeBarra {
 
-    private static final String DROIDCAM_URL = System.getenv("DROIDCAM_URL");
+    private static final String DROIDCAM_URL = "http://192.168.0.5:4747/video";
     private InputStream videoStream;
     private long lastScanTime = 0;
     private static final long SCAN_DELAY_MS = 5000;
